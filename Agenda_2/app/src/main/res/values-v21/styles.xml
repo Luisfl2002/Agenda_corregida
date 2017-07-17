@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Feregrino" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@color/background_material_dark</item>
+        <item name="android:colorForeground">@android:color/holo_blue_light</item>
+        <item name="colorPrimary">@android:color/holo_blue_bright</item>
+        <item name="colorAccent">@android:color/holo_blue_bright</item>
+    </style>
+</resources>

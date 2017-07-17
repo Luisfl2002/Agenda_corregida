@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.angel_fere.agenda_2.Datos">
+
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textSize="30dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!--Nombre!-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitulo"
+        android:id="@+id/llnombre"
+        android:layout_marginTop="18dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Titulonombre"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:id="@+id/Rnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        />
+    </LinearLayout>
+<!--Fecha de nacimiento!-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llnombre"
+        android:id="@+id/llfnacimiento"
+        android:layout_marginTop="16dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Titulofnacimiento"
+            android:textSize="18dp"
+            />
+
+
+
+    <TextView
+        android:id="@+id/Rfnacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Rnombre"
+        android:textSize="18dp"
+        />
+    </LinearLayout>
+
+    <!--Telefono!-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llfnacimiento"
+        android:id="@+id/lltelefono"
+        android:layout_marginTop="16dp"
+
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Titulotelefono"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/Rtelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        />
+    </LinearLayout>
+
+    <!--Email!-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lltelefono"
+        android:id="@+id/llemail"
+        android:textSize="18dp"
+        android:layout_marginTop="16dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Tituloemail"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/Remail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+    <!--Descripcion!-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llemail"
+        android:id="@+id/lldescripcion"
+        android:layout_marginTop="16dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Titulodescripcion"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/Rdescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        />
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/Reditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/editar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

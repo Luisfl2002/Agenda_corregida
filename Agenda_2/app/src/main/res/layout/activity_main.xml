@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.angel_fere.agenda_2.MainActivity">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:id="@+id/tinombre"
+        >
+        <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etnombre"
+
+        android:hint="@string/nombre"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:inputType="text"
+
+        />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/Titulobotonfnacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Titulobotonfnacimiento"
+        android:layout_below="@+id/tinombre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
+    <LinearLayout
+        android:id="@+id/llfnacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/tinombre"
+        android:layout_centerHorizontal="true">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/fnacimiento"
+        android:id="@+id/tvfnacimiento"
+
+
+
+        android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:id="@+id/titelefono"
+        android:layout_below="@+id/llfnacimiento"
+        >
+
+        <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ettelefono"
+        android:hint="@string/telefono"
+        android:layout_marginTop="83dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="number"
+        />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:id="@+id/tiemail"
+        android:layout_below="@+id/titelefono"
+        >
+        <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etemail"
+        android:hint="@string/email"
+        android:layout_marginTop="31dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="text"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:id="@+id/tidescripcion"
+        android:layout_below="@+id/tiemail"
+        >
+        <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etdescripcion"
+        android:hint="@string/descripcion"
+        android:layout_marginTop="22dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="text"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sig"
+        android:id="@+id/bsig"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
